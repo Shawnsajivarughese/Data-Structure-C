@@ -1,0 +1,33 @@
+#include<stdio.h>
+void main ()
+{
+    int n,i,key,flag=0;
+    printf("enter the limit:");
+    scanf("%d", &n);
+    int a[n];
+    printf("enter the elment:");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&n);
+    }
+    printf("enter the search key:");
+    scanf("%d",&key);
+    for(i=0;i<n;i++)
+    {
+        if(a[i]==key)
+        {
+            flag = 1;
+            break;
+        }
+        else
+        flag = 0;
+    }
+    if(flag==0)
+    {
+     printf("the element is not found\n");
+    }
+    else
+    {
+        printf("the %d is found at %d,key,a[i]");
+    }
+}
